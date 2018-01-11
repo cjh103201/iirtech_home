@@ -1,0 +1,130 @@
+!SESSION 2018-01-09 17:44:02.678 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=9.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_BD
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/rnder006/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data /Users/rnder006/Desktop/develop/java_projects/IIR_HOME -product org.eclipse.epp.package.jee.product -keyring /Users/rnder006/.eclipse_keyring
+
+!ENTRY org.eclipse.ecf.remoteservice.ui 4 0 2018-01-09 17:44:06.177
+!MESSAGE [org.eclipse.ecf.mgmt.rsa.discovery.ui.discovery(55)] bind method [bindRemoteServiceAdmin] not found; Component will fail
+
+!ENTRY org.eclipse.ecf.remoteservice.ui 4 0 2018-01-09 17:44:06.177
+!MESSAGE [org.eclipse.ecf.mgmt.rsa.discovery.ui.discovery(55)] bind method [bindRemoteServiceAdmin] not found
+
+!ENTRY ch.ethz.iks.slp 4 0 2018-01-09 17:44:06.216
+!MESSAGE Exception in initial DA lookup
+!STACK 0
+ch.ethz.iks.slp.ServiceLocationException: No route to host
+	at ch.ethz.iks.slp.impl.SLPCore.daLookup(SLPCore.java:645)
+	at ch.ethz.iks.slp.impl.SLPCore.init(SLPCore.java:321)
+	at ch.ethz.iks.slp.impl.Activator$2.getService(Activator.java:51)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:212)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:210)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:111)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:45)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:508)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:461)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:624)
+	at org.osgi.util.tracker.ServiceTracker.addingService(ServiceTracker.java:414)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:318)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:261)
+	at org.eclipse.ecf.internal.provider.jslp.Activator.getLocator(Activator.java:64)
+	at org.eclipse.ecf.provider.jslp.container.JSLPDiscoveryContainer.getServices(JSLPDiscoveryContainer.java:156)
+	at org.eclipse.ecf.osgi.services.remoteserviceadmin.EndpointDescriptionLocator$5.run(EndpointDescriptionLocator.java:603)
+	at org.eclipse.equinox.concurrent.future.SingleOperationListenableFuture$1.run(SingleOperationListenableFuture.java:77)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.equinox.concurrent.future.SingleOperationListenableFuture.runWithProgress(SingleOperationListenableFuture.java:65)
+	at org.eclipse.equinox.concurrent.future.ThreadsExecutor$1.run(ThreadsExecutor.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-09 17:44:10.174
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2018-01-09 17:44:12.465
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-01-09 17:44:12.465
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@edf68f5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1f94df5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-01-09 17:44:12.465
+!MESSAGE A conflict occurred for ALT+COMMAND+Q P:
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.ui.views.showView,Show View,
+		Shows a particular view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56972302,
+		[Parameter(org.eclipse.ui.views.showView.viewId,View,null,true), Parameter(org.eclipse.ui.views.showView.secondaryId,Secondary Id,null,true), Parameter(org.eclipse.ui.views.showView.makeFast,As FastView,null,true)],,true),[org.eclipse.core.commands.Parameterization@351c7030]),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+Q P,
+	ParameterizedCommand(Command(org.eclipse.php.ui.explorer,PHP Script Explorer,
+		Shows the Script Explorer,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4a244aa3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-01-09 17:44:12.465
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3f491bd2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@74947f2b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-09 17:44:14.861
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-01-09 17:44:14.863
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.dltk.core 4 0 2018-01-09 17:44:20.747
+!MESSAGE Unable to find any indexer
+
+!ENTRY org.eclipse.ui.ide 4 4 2018-01-09 17:45:16.297
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2018-01-09 17:45:16.298
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2018-01-09 17:45:16.298
+!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.ecf.remoteservice.ui 4 0 2018-01-09 17:45:16.841
+!MESSAGE [org.eclipse.ecf.mgmt.rsa.discovery.ui.discovery(55)] unbind method [unbindRemoteServiceAdmin] not found; Component will fail
+
+!ENTRY org.eclipse.ecf.remoteservice.ui 4 0 2018-01-09 17:45:16.842
+!MESSAGE [org.eclipse.ecf.mgmt.rsa.discovery.ui.discovery(55)] unbind method [unbindRemoteServiceAdmin] not found
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-01-09 17:45:18.691
+!MESSAGE The workspace will exit with unsaved changes in this session.
